@@ -13,9 +13,12 @@ function App() {
     <div className="flex flex-col">
 
       {/* Navbar */}
-      <nav className="fixed top-0 left-0 w-full h-[56px] max-h-[56px] xl:max-h-[118px] xl:h-[118px] flex items-center justify-between xl:items-start xl:justify-normal py-[8px] px-[16px] xl:p-0 bg-[#1A1D2F]">
+      <nav className="fixed top-0 left-0 w-full h-[56px] max-h-[56px] xl:max-h-[118px] xl:h-[118px] flex items-center justify-between xl:items-start xl:justify-normal py-[8px] px-[10px] xl:p-0 bg-logo-background xl:bg-[#1A1D2F] z-[31]">
         <div className="hidden xl:flex relative h-full min-w-[40px] max-w-[40px] xl:min-w-[324px] xl:max-w-[324px] items-center justify-center bg-logo-background cursor-pointer">
           <img src={rustyLogo} className="w-[40px] xl:w-auto inline-block" />
+        </div>
+        <div className="xl:hidden relative h-full min-w-[40px] max-w-[40px] xl:min-w-[324px] xl:max-w-[324px] flex items-center justify-center cursor-pointer">
+          <img src={rustyLogo} className="w-[28px]" />
         </div>
 
         {/* Links */}
@@ -48,7 +51,7 @@ function App() {
             </div>
 
             {/* Coin Balance & Wallet Button */}
-            <div className="absolute translate-x-3 xl:left-1/2 xl:-translate-x-[40%] flex items-center w-full max-w-[164px] xl:max-w-[256px]">
+            <div className="absolute translate-x-[8px] xl:left-1/2 xl:-translate-x-[40%] flex items-center w-full max-w-[164px] xl:max-w-[256px]">
               <div className="w-full max-w-[158px] h-10 rounded-[4px] border border-1 border-white/5 flex items-center bg-[linear-gradient(266deg,rgb(32,36,71)_54.3%,rgb(44,41,50)_96.88%),linear-gradient(259deg,rgb(39,43,76)_65.15%,rgb(79,60,56)_99.34%)]">
                 <div className="relative w-full flex items-center gap-[8px] xl:gap-[9px] px-[12px] py-[10px]">
                   <img className="w-[16px] xl:w-[22px]" src={coins} />
@@ -88,16 +91,24 @@ function App() {
                   <img className="w-[16px] h-[16px]" src={bellIcon} />
                     <div className="absolute translate-x-[5px] -translate-y-[6px] w-[5px] h-[5px] p-[1px] rounded-full bg-[#27F278] ">
                     </div>
-                  
                 </div>
               </div>
             </div>
+          </div>
+        </div>
 
+        {/* Menu Button */}
+        <div className="relative w-[40px] h-[40px] rounded-[4px] xl:hidden flex items-center justify-center mr-[7px]">
+          <div className=" cursor-pointer z-10">
+            <div className="w-[17px] h-[14px] relative">
+              <div className="absolute h-[2px] rounded-[2px] transition-all duration-200 bg-[#595C87] w-full top-0"></div>
+              <div className="absolute h-[2px] rounded-[2px] transition-all duration-200 bg-[#595C87] w-full top-1/2"></div>
+              <div className="absolute h-[2px] rounded-[2px] transition-all duration-200 bg-[#595C87] w-full top-full"></div>
+            </div>
           </div>
 
-          
-
         </div>
+
       </nav>
 
     </div>
