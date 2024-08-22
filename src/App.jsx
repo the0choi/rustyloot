@@ -2,6 +2,9 @@ import rustyLogo from './assets/images/smallLogo.1c6479f7.svg';
 import arrowDown from './assets/images/arrowDown.fd2bfb32.svg';
 import enFlag from './assets/images/enFlag.f28a649c.svg';
 import coins from './assets/images/coinStack.68852850.svg';
+import profilePic from './assets/images/avatar.png';
+import profileBadge from './assets/images/opalTierBadge.21f4a217.png';
+import bellIcon from './assets/images/bell-solid-24.png';
 import './App.css';
 
 function App() {
@@ -11,7 +14,7 @@ function App() {
 
       {/* Navbar */}
       <nav className="fixed top-0 left-0 w-full h-[56px] max-h-[56px] xl:max-h-[118px] xl:h-[118px] flex items-center justify-between xl:items-start xl:justify-normal py-[8px] px-[16px] xl:p-0 bg-[#1A1D2F]">
-        <div className="hidden xl:flex relative h-full min-w-[40px] max-w-[40px] xl:min-w-[324px] xl:max-w-[324px] items-center justify-center bg-logo-background active">
+        <div className="hidden xl:flex relative h-full min-w-[40px] max-w-[40px] xl:min-w-[324px] xl:max-w-[324px] items-center justify-center bg-logo-background cursor-pointer">
           <img src={rustyLogo} className="w-[40px] xl:w-auto inline-block" />
         </div>
 
@@ -20,8 +23,8 @@ function App() {
           <div className="relative w-full min-h-[36px] h-[36px] rounded-bl-[4px] xl:flex items-center justify-start px-[40px] hidden gap-[20px] bg-[#191A2C]">
             <a className="text-[#6a6fa3] hover:text-[#9a9ec8] text-[14px] font-bold cursor-pointer">Earn with us</a>
             <a className="text-[#6A6FA3] hover:text-[#9a9ec8] text-[14px] font-bold cursor-pointer">Leaderboard</a>
-            <a className="text-transparent bg-clip-text bg-gradient-to-b from-[#FFD691] to-[#EEB351] text-[14px] font-bold cursor-pointer">Rewards</a>
-            <div className="flex items-center gap-[6px] ml-auto">
+            <a className="text-transparent bg-clip-text bg-gradient-to-b from-[#FFD691] to-[#EEB351] hover:text-[#EEB351] text-[14px] font-bold cursor-pointer">Rewards</a>
+            <div className="flex items-center gap-[6px] ml-auto cursor-pointer">
               <img className="w-[16px]" src={enFlag} />
               <span className="font-bold text-[13px] text-[#9A9EC8]">ENG</span>
               <div className="min-w-[16px] w-[16px] min-h-[16px] h-[16px] flex items-center justify-center whitespace-nowrap rounded bg-[radial-gradient(77.08%_101.71%_at_77.08%_-35.83%,rgb(56,60,92)_32.6%,rgb(45,49,70)_100%),linear-gradient(258.59deg,rgb(66,70,98)_45.82%,rgb(59,61,79)_99.34%)] border border-1 border-[#494B5E]">
@@ -32,7 +35,7 @@ function App() {
 
           <div className="relative w-full h-full flex items-center justify-center xl:justify-between xl:px-[40px]">
             {/* Games Button */}
-            <div className="max-w-[143px] w-full h-10 hidden xl:block flex justify-between items-center bg-[linear-gradient(266deg,rgb(32,36,71)_54.3%,rgb(44,41,50)_96.88%),linear-gradient(259deg,rgb(39,43,76)_65.15%,rgb(79,60,56)_99.34%)] rounded-[4px] border border-1 border-white/5">
+            <div className="max-w-[143px] w-full h-10 hidden xl:block flex justify-between items-center bg-[linear-gradient(266deg,rgb(32,36,71)_54.3%,rgb(44,41,50)_96.88%),linear-gradient(259deg,rgb(39,43,76)_65.15%,rgb(79,60,56)_99.34%)] rounded-[4px] border border-1 border-white/5 cursor-pointer">
               <div className="flex justify-between items-center w-full h-full px-[12px]">
                 <div className="flex gap-[8px] items-center">
                   <svg viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="12"><path d="M24 3.09675V4.40861H0V3.09675L1.7507 0H22.2493L24 3.09675Z" fill="#FFB436"></path><path d="M10.362 8.64753H13.638L14.0269 5.9087H9.97312L10.362 8.64753Z" fill="#FFB436"></path><path d="M2.96371 18H5.56562V15.5838H8.4879V18H15.5122V15.5838H18.4344V18H21.0363C22.6731 18 24 16.3433 24 14.2996V5.9087H15.9791L15.2495 11.0475H8.75045L8.0209 5.9087H0V14.2996C0 16.3433 1.32688 18 2.96371 18Z" fill="#FFB436"></path></svg>
@@ -60,10 +63,31 @@ function App() {
               </a>
             </div>
 
-            {/* Profile Button */}
+            {/* Profile Settings */}
             <div className="relative hidden xl:block flex items-center justify-end gap-[10px]">
               <div className="flex items-center gap-[10px] cursor-pointer">
+                {/* Profile Picture */}
                 <div className="relative flex items-center justify-center">
+                  <svg width="40" height="40">
+                    <circle stroke="#404472" fill="none" r="19.25" cx="20" cy="20"></circle>
+                    <circle stroke="#404472" fill="none" r="19.25" cx="20" cy="20" transform="rotate(-90 20 20)"></circle>
+                  </svg>
+                  <div className="absolute">
+                    <img className="h=[34px] w-[34px] rounded-full p-0.5" src={profilePic} ></img>
+                  </div>
+                  <div className="absolute top-0 right-0 translate-x-[6px]">
+                    <img className="w-[16px]" src={profileBadge} />
+                  </div>
+                </div>
+
+                <div className="min-w-[16px] w-[16px] min-h-[16px] h-[16px] flex items-center justify-center whitespace-nowrap rounded bg-[radial-gradient(77.08%_101.71%_at_77.08%_-35.83%,rgb(56,60,92)_32.6%,rgb(45,49,70)_100%),linear-gradient(258.59deg,rgb(66,70,98)_45.82%,rgb(59,61,79)_99.34%)] border border-1 border-[#494B5E]">
+                  <img className="w-[7px] h-[4px]" src={arrowDown} />
+                </div>
+
+                <div className="ml-[5px] min-w-[34px] w-[34px] min-h-[34px] h-[34px] flex items-center justify-center whitespace-nowrap rounded bg-[radial-gradient(77.08%_101.71%_at_77.08%_-35.83%,rgb(56,60,92)_32.6%,rgb(45,49,70)_100%),linear-gradient(258.59deg,rgb(66,70,98)_45.82%,rgb(59,61,79)_99.34%)] border border-1 border-[#494B5E]">
+                  <img className="w-[16px] h-[16px]" src={bellIcon} />
+                    <div className="absolute translate-x-[5px] -translate-y-[6px] w-[5px] h-[5px] p-[1px] rounded-full bg-[#27F278] ">
+                    </div>
                   
                 </div>
               </div>
