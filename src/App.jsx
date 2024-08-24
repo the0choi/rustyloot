@@ -6,15 +6,17 @@ import WalletBalance from './components/WalletBalance';
 import ProfileSection from './components/ProfileSection';
 import GamesDropdown from './components/GamesDropdown';
 import MenuButton from './components/MenuButton';
+import Banner from './components/Banner';
 
 function App() {
   return (
     <div className="flex flex-col">
+      {/* Navbar */}
       <nav className="fixed top-0 left-0 w-full h-[56px] max-h-[56px] xl:max-h-[116px] xl:h-[116px] flex items-center justify-between xl:items-start xl:justify-normal py-[8px] px-[16px] xl:p-0 bg-logo-mobile-background xl:bg-[#1A1D2F]">
         
         <LogoSection />
 
-        <div className="relative h-full w-full flex flex-col xl:bg-header-footer-background xl:max-w-none z-10">
+        <div className="relative h-full w-full flex flex-col xl:bg-header-footer-background xl:max-w-none">
 
           <NavbarLinks />
           
@@ -35,6 +37,13 @@ function App() {
           </div>
         </div>
       </nav>
+
+      <div className="mt-[56px] xl:mt-[116px] w-screen flex flex-col ">
+        <Banner />
+      </div>
+      
+
+
     </div>
   );
 }

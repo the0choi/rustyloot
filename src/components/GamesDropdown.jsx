@@ -1,4 +1,4 @@
-import arrowDownIcon from '../assets/images/arrowDown.svg';
+import gamesArrowDownIcon from '../assets/images/gamesArrowDown.svg';
 
 const GamesDropdown = () => {
   return (
@@ -9,7 +9,7 @@ const GamesDropdown = () => {
           <span className="text-white text-[14px] font-medium">Games</span>
         </div>
         <div className="w-[16px] h-[16px] flex items-center justify-center">
-          <img src={arrowDownIcon} className="w-[10px]" alt="ArrowDownIcon" />
+          <img src={gamesArrowDownIcon} className="w-[10px]" alt="ArrowDownIcon" />
         </div>
       </div>
     </div>

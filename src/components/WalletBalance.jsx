@@ -1,4 +1,4 @@
-import coins from '../assets/images/coinStack.68852850.svg';
+import coins  from '../assets/images/coinsOrange.png';
 import walletIcon from '../assets/images/wallet.svg';
 
 const WalletBalance = () => {
@@ -10,7 +10,7 @@ const WalletBalance = () => {
           <div className="w-full text-[14px] flex text-transparent bg-clip-text bg-coins-text-yellow font-bold">1450.00</div>
         </div>
       </div>
-      <a className="w-[101px] h-[40px] flex items-center justify-center gap-[6px] px-[16px] py-[10px] whitespace-nowrap border border-[#1BDC80] hover:border-[#81ffc3] h-[40px] rounded-tr-[4px] rounded-br-[4px] cursor-pointer relative bg-wallet-button hover:bg-wallet-button-hover">
+      <a className="w-[40px] xl:w-[101px] h-[40px] flex items-center justify-center xl:gap-[6px] xl:px-[16px] xl:py-[10px] border border-[#1BDC80] hover:border-[#81ffc3] h-[40px] rounded-tr-[4px] rounded-br-[4px] cursor-pointer relative bg-wallet-button hover:bg-wallet-button-hover">
         <div className="w-[20px] h-[20px] flex items-center justify-center">
           <img className="w-[14px]" src={walletIcon} alt="Wallet" />
         </div>

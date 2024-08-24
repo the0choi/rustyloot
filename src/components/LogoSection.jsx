@@ -1,4 +1,4 @@
-import rustyLogo from '../assets/images/smallLogo.1c6479f7.svg';
+import rustyLogo from '../assets/images/rustyLogo.png';
 
 const LogoSection = () => {
   return (
@@ -16,3 +16,4 @@ const LogoSection = () => {
 };
 
 export default LogoSection;
+ 
