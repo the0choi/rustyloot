@@ -7,6 +7,7 @@ import ProfileSection from './components/ProfileSection';
 import GamesDropdown from './components/GamesDropdown';
 import MenuButton from './components/MenuButton';
 import Banner from './components/Banner';
+import BenefitsCards from './components/BenefitsCards';
 
 function App() {
   return (
@@ -39,7 +40,11 @@ function App() {
       </nav>
 
       <div className="mt-[56px] xl:mt-[116px] w-screen flex flex-col ">
+        
         <Banner />
+
+        <BenefitsCards />
+        
       </div>
       
 

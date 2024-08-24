@@ -16,6 +16,7 @@ const Banner = () => {
             </span>
           </div>
 
+          {/* Affiliate Code Button */}
           <div className="w-full sm:w-auto flex h-[40px] items-center">
             <div className="w-full flex items-center justify-center px-[16px] py-[10px] gap-[6px] rounded-[4px] border border-1 border-[#664B33] bg-[radial-gradient(63.62%_115%_at_46.04%_0%,_#473C39_0%,_#473C39_0.01%,_#202139_100%)]">
               <span className="text-[#FFB436] text-center text-[14px] leading-[18px] tracking-[0.1px] font-bold">Set Affiliate Code</span>
@@ -26,8 +27,6 @@ const Banner = () => {
       </div>
       <img src={banner} className="w-full h-full block sm:hidden" />
     </>
-    
-
   )
 }
 
