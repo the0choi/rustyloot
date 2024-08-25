@@ -1,3 +1,5 @@
+import { useEffect, useRef, useState } from 'react';
+
 import ironBadge from '../assets/images/ironBadge.png';
 import copperBadge from '../assets/images/copperBadge.png';
 import titaniumBadge from '../assets/images/titaniumBadge.png';
@@ -7,19 +9,36 @@ import amberBadge from '../assets/images/amberBadge.png';
 import BadgeCard from './BadgeCard';
 
 const ProgressiveAffiliateSystem = () => {
+  const containerRef = useRef(null);
+  const [isOverflowing, setIsOverflowing] = useState(false);
+
+  useEffect(() => {
+    const checkOverflow = () => {
+      if (containerRef.current) {
+        setIsOverflowing(containerRef.current.scrollWidth > containerRef.current.clientWidth);
+      }
+    };
+
+    checkOverflow();
+    window.addEventListener('resize', checkOverflow);
+    return () => window.removeEventListener('resize', checkOverflow);
+  }, []);
+
   return (
-    <div className="flex flex-col items-center sm:gap-[16px] xl:gap-[20px] self-stretch sm:py-[32px] xl:py-[56px] bg-[linear-gradient(270deg,_#151628_0%,_#171A31_50%,_#15172B_100%)]">
-      <div className="flex flex-col items-center sm:gap-[4px] xl:gap-[8px]">
-        <span className="text-[#FFF] text-center sm:text-[18px] xl:text-[24px] font-bold sm:leading-[23px] xl:leading-[31px] tracking-[0.1px] self-stretch">
+    <div className="flex flex-col items-center sm:gap-[16px] xl:gap-[20px] self-stretch px-[16px] pb-[16px] sm:px-[0px] pt-[24px] sm:py-[32px] xl:py-[56px] bg-[linear-gradient(270deg,_#151628_0%,_#171A31_50%,_#15172B_100%)]">
+      <div className="flex flex-col items-center gap-[4px] xl:gap-[8px]">
+        <span className="text-[#FFF] text-center text-[18px] xl:text-[24px] font-bold leading-[23px] xl:leading-[31px] tracking-[0.1px] self-stretch">
           Progressive Affiliate System
         </span>
-        <span className="w-[500px] text-[#6A6FA3] text-center sm:text-[11px] xl:text-[13px] font-bold sm:leading-[14px] xl:leading-[17px] tracking-[0.1px] self-stretch">
+        <span className="w-[344px] sm:w-[500px] text-[#6A6FA3] text-center text-[11px] xl:text-[13px] font-bold leading-[14px] xl:leading-[17px] tracking-[0.1px] self-stretch">
           The more users you refer the greater the rewards. Ascend through the ranks
           to get up to 5% of every deposit and unlock exclusive features and rewards.
         </span>
       </div>
 
-      <div className="flex items-center gap-[12px]">
+      <div 
+        ref={containerRef} 
+        className={`w-full flex overflow-x-auto ${isOverflowing ? 'justify-start' : 'justify-center'} py-[16px] sm:p-[16px] items-center gap-[10px] sm:gap-[12px]`}>
 
         <BadgeCard 
           badgeImage={ironBadge}

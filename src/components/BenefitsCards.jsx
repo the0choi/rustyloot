@@ -1,3 +1,5 @@
+import { useEffect, useRef, useState } from 'react';
+
 import othersCard from '../assets/images/othersCard.png';
 import earningsCard from '../assets/images/earningsCard.png';
 import withdrawCard from '../assets/images/withdrawCard.png';
@@ -24,8 +26,25 @@ Card.propTypes = {
 };
 
 const BenefitsCards = () => {
+  const containerRef = useRef(null);
+  const [isOverflowing, setIsOverflowing] = useState(false);
+
+  useEffect(() => {
+    const checkOverflow = () => {
+      if (containerRef.current) {
+        setIsOverflowing(containerRef.current.scrollWidth > containerRef.current.clientWidth);
+      }
+    };
+
+    checkOverflow();
+    window.addEventListener('resize', checkOverflow);
+    return () => window.removeEventListener('resize', checkOverflow);
+  }, []);
+
   return (
-    <div className="flex justify-center items-center overflow-x-auto gap-[12px] xl:gap-[16px] self-stretch p-[16px] xl:pt-[80px] bg-[linear-gradient(107deg,_#17182F_0%,_#151628_67.29%)]">
+    <div 
+      ref={containerRef} 
+      className={`flex ${isOverflowing ? 'justify-start' : 'justify-center'} items-center overflow-x-auto gap-[12px] xl:gap-[16px] self-stretch p-[16px] xl:pt-[80px] bg-[linear-gradient(107deg,_#17182F_0%,_#151628_67.29%)]`}>
       <Card 
         image={othersCard} 
         title="Get others involved" 

@@ -10,6 +10,7 @@ import Banner from './components/Banner';
 import BenefitsCards from './components/BenefitsCards';
 import HowDoesItWork from './components/HowDoesItWork';
 import ProgressiveAffiliateSystem from './components/ProgressiveAffiliateSystem';
+import EarningsDashboard from './components/EarningsDashboard';
 
 function App() {
   return (
@@ -50,6 +51,8 @@ function App() {
         <HowDoesItWork />
 
         <ProgressiveAffiliateSystem />
+
+        <EarningsDashboard />
 
       </div>
       
