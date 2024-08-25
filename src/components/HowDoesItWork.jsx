@@ -56,8 +56,16 @@ const HowDoesItWork = () => {
       </div>
 
       <div className="relative flex items-center justify-center ml-[139.97px] sm:ml-[162.75px] xl:ml-[260px]">
-        <img src={deposit} className="absolute left-0 -translate-x-[139.97px] sm:-translate-x-[162.75px] xl:-translate-x-[260px] w-[185.19px] sm:w-[215.337px] xl:w-[344px] h-[182.081px] sm:h-[211.581px] xl:h-[338px] shrink-0 z-10" />
-        <img src={freeCoins} className="w-[204.032px] sm:w-[237.246px] xl:w-[379px] h-[204.706px] sm:h-[237.872px] xl:h-[380px] shrink-0 z-20 border border-1 border-[#2C3054] rounded-[12px]" />
+        <img 
+          src={deposit} 
+          className="absolute left-0 -translate-x-[139.97px] sm:-translate-x-[162.75px] xl:-translate-x-[260px] w-[185.19px] sm:w-[215.337px] xl:w-[344px] h-[182.081px] sm:h-[211.581px] xl:h-[338px] shrink-0 z-10" 
+          alt="Deposit"
+        />
+        <img 
+          src={freeCoins} 
+          className="w-[204.032px] sm:w-[237.246px] xl:w-[379px] h-[204.706px] sm:h-[237.872px] xl:h-[380px] shrink-0 z-20 border border-1 border-[#2C3054] rounded-[12px]" 
+          alt="Free Coins"
+        />
       </div>
     </div>
   )

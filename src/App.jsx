@@ -55,9 +55,6 @@ function App() {
         <EarningsDashboard />
 
       </div>
-      
-
-
     </div>
   );
 }

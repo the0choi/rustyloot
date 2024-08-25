@@ -13,10 +13,18 @@ const ProfileSection = () => {
             <path d="M20 39.5C31.0457 39.5 39.5 30.5 39.5 20C39.5 9.5 31.0457 0.5 20 0.5" stroke="#CA83F5" strokeLinecap="round"/>
           </svg>
           <div className="absolute">
-            <img className="h=[34px] w-[34px] rounded-full p-0.5" src={profilePic} alt="Profile" />
+            <img 
+              className="h=[34px] w-[34px] rounded-full p-0.5" 
+              src={profilePic} 
+              alt="Profile" 
+            />
           </div>
           <div className="absolute top-0 right-0 translate-x-[8px]">
-            <img className="w-[16px]" src={profileBadge} alt="Profile Badge" />
+            <img 
+              className="w-[16px]" 
+              src={profileBadge} 
+              alt="Profile Badge" 
+            />
           </div>
         </div>
 

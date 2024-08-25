@@ -10,7 +10,11 @@ const NavbarLinks = () => {
         <div className="flex items-center gap-[8px] ml-auto cursor-pointer">
           <div className="flex items-center justify-center gap-[6px]">
             <div className='w-[16px] h-[16px] flex justify-center items-center'>
-              <img className="w-[16px]" src={enFlag} alt="English Flag" />
+              <img 
+                className="w-[16px]" 
+                src={enFlag} 
+                alt="English Flag" 
+              />
             </div>
             <span className="font-bold text-[13px] text-[#9A9EC8]">ENG</span>
           </div>

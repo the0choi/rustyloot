@@ -18,7 +18,11 @@ const BadgeCard = ({ badgeImage, badgeStyle, badgeName, textColor, backgroundCol
         <div className="relative w-[54px] xl:w-[86px] h-[54px] xl:h-[86px] -translate-y-[17px] xl:-translate-y-[0px] shrink-0">
             {circleGradient}
           
-          <img src={badgeImage} className={`shrink-0 z-10 absolute inset-0 ${badgeStyle}`} />
+          <img 
+            src={badgeImage} 
+            className={`shrink-0 z-10 absolute inset-0 ${badgeStyle}`} 
+            alt="Badge Image"
+          />
         </div>
 
         <div className={`pb-[20px] xl:pb-[34px] sm:h-[54.69995px] xl:h-auto flex flex-col justify-end items-center rounded-[6px] gap-[2px] xl:gap-[4px] shrink-0 self-stretch ${bottomGradient}`}>
@@ -30,7 +34,10 @@ const BadgeCard = ({ badgeImage, badgeStyle, badgeName, textColor, backgroundCol
             <div className="w-[12px] h-[12px] shrink-0">
               {icon}
             </div>
-            <span className="text-[11px] sm:text-[12px] font-bold leading-[14px] sm:leading-[15px] tracking-[0.1px]" style={{ color: textColor }}>
+            <span 
+              className="text-[11px] sm:text-[12px] font-bold leading-[14px] sm:leading-[15px] tracking-[0.1px]" 
+              style={{ color: textColor }}
+            >
               {textContent}
             </span>
           </div>

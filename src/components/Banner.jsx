@@ -5,7 +5,11 @@ const Banner = () => {
   return (
     <>
       <div className="relative w-full sm:h-[225px] xl:h-[468px] self-stretch bg-[linear-gradient(107deg,_#17182F_0%,_#151628_67.29%)]">
-        <img src={bannerAffiliates} className="absolute inset-0 w-full h-full hidden sm:block object-cover" />
+        <img 
+          src={bannerAffiliates} 
+          className="absolute inset-0 w-full h-full hidden sm:block object-cover" 
+          alt="Banner Affiliates"  
+        />
         <div className="sm:absolute sm:top-0 sm:left-0 p-[16px] sm:translate-x-[40px] sm:translate-y-[55px] xl:translate-x-[236px] xl:translate-y-[155.5px] flex flex-col items-center sm:items-start gap-[16px] sm:gap-[20px] xl:gap-[40px]">
           <div className="flex flex-col items-center sm:items-start sm:gap-[6px]">
             <span className="text-[#fff] text-[20px] sm:text-[24px] xl:text-[40px] leading-[26px] sm:leading-[31px] xl:leading-[51px] font-bold tracking-[0.1px]">
