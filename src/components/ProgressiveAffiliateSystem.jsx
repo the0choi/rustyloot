@@ -25,20 +25,22 @@ const ProgressiveAffiliateSystem = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center sm:gap-[16px] xl:gap-[20px] self-stretch px-[16px] pb-[16px] sm:px-[0px] pt-[24px] sm:py-[32px] xl:py-[56px] bg-[linear-gradient(270deg,_#151628_0%,_#171A31_50%,_#15172B_100%)]">
-      <div className="flex flex-col items-center gap-[4px] xl:gap-[8px]">
-        <span className="text-[#FFF] text-center text-[18px] xl:text-[24px] font-bold leading-[23px] xl:leading-[31px] tracking-[0.1px] self-stretch">
-          Progressive Affiliate System
-        </span>
-        <span className="w-[344px] sm:w-[500px] text-[#6A6FA3] text-center text-[11px] xl:text-[13px] font-bold leading-[14px] xl:leading-[17px] tracking-[0.1px] self-stretch">
-          The more users you refer the greater the rewards. Ascend through the ranks
-          to get up to 5% of every deposit and unlock exclusive features and rewards.
-        </span>
+    <div className={`flex flex-col items-center sm:gap-[16px] xl:gap-[20px] self-stretch bg-[linear-gradient(270deg,_#151628_0%,_#171A31_50%,_#15172B_100%)]`}>
+      <div className="pt-[24px] sm:pt-[32px] px-[16px] sm:px-[0px] w-full">
+        <div className="flex flex-col items-center justify-center gap-[4px] xl:gap-[8px]">
+          <span className="text-[#FFF] text-center text-[18px] xl:text-[24px] font-bold leading-[23px] xl:leading-[31px] tracking-[0.1px] self-stretch">
+            Progressive Affiliate System
+          </span>
+          <span className="mx-auto w-[344px] sm:w-[500px] text-[#6A6FA3] text-center text-[11px] xl:text-[13px] font-bold leading-[14px] xl:leading-[17px] tracking-[0.1px] self-stretch">
+            The more users you refer the greater the rewards. Ascend through the ranks
+            to get up to 5% of every deposit and unlock exclusive features and rewards.
+          </span>
+        </div>
       </div>
 
       <div 
         ref={containerRef} 
-        className={`w-full flex overflow-x-auto ${isOverflowing ? 'justify-start' : 'justify-center'} py-[16px] sm:p-[16px] items-center gap-[10px] sm:gap-[12px]`}>
+        className={`w-full flex overflow-x-auto ${isOverflowing ? 'justify-start' : 'justify-center'} py-[16px] pl-[16px] sm:px-[16px] sm:py-[0px] items-center gap-[10px] sm:gap-[12px]`}>
 
         <BadgeCard 
           badgeImage={ironBadge}
@@ -257,12 +259,17 @@ const ProgressiveAffiliateSystem = () => {
           }
           current={false}
         />
+        
+        {/* Creates even spacing on the right side at the end of the overflow */}
+        <div className="mr-[6px]"></div>
 
       </div>
-
-      <div className="w-full sm:w-auto flex h-[40px] items-center cursor-pointer">
-        <div className="w-full flex items-center justify-center px-[16px] py-[10px] gap-[6px] rounded-[4px] border border-1 border-[#664B33] bg-[radial-gradient(63.62%_115%_at_46.04%_0%,_#473C39_0%,_#473C39_0.01%,_#202139_100%)]">
-          <span className="text-[#FFB436] text-center text-[14px] leading-[18px] tracking-[0.1px] font-bold">View Tiers</span>
+      
+      <div className="pb-[16px] sm:pb-[32px] px-[16px] w-full sm:w-auto">
+        <div className="w-full sm:w-auto flex h-[40px] items-center cursor-pointer">
+          <div className="w-full flex items-center justify-center px-[16px] py-[10px] gap-[6px] rounded-[4px] border border-1 border-[#664B33] bg-[radial-gradient(63.62%_115%_at_46.04%_0%,_#473C39_0%,_#473C39_0.01%,_#202139_100%)]">
+            <span className="text-[#FFB436] text-center text-[14px] leading-[18px] tracking-[0.1px] font-bold">View Tiers</span>
+          </div>
         </div>
       </div>
 

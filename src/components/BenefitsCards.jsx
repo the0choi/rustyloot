@@ -45,6 +45,7 @@ const BenefitsCards = () => {
     <div 
       ref={containerRef} 
       className={`flex ${isOverflowing ? 'justify-start' : 'justify-center'} items-center overflow-x-auto gap-[12px] xl:gap-[16px] self-stretch p-[16px] xl:pt-[80px] bg-[linear-gradient(107deg,_#17182F_0%,_#151628_67.29%)]`}>
+
       <Card 
         image={othersCard} 
         title="Get others involved" 
@@ -60,6 +61,7 @@ const BenefitsCards = () => {
         title="Withdraw your Profits" 
         description="Instantly cash out out your earnings at anytime" 
       />
+
     </div>
   )
 }
