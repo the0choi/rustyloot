@@ -8,12 +8,14 @@ import GamesDropdown from './components/GamesDropdown';
 import MenuButton from './components/MenuButton';
 import Banner from './components/Banner';
 import BenefitsCards from './components/BenefitsCards';
+import HowDoesItWork from './components/HowDoesItWork';
+import ProgressiveAffiliateSystem from './components/ProgressiveAffiliateSystem';
 
 function App() {
   return (
     <div className="flex flex-col">
       {/* Navbar */}
-      <nav className="fixed top-0 left-0 w-full h-[56px] max-h-[56px] xl:max-h-[116px] xl:h-[116px] flex items-center justify-between xl:items-start xl:justify-normal py-[8px] px-[16px] xl:p-0 bg-logo-mobile-background xl:bg-[#1A1D2F]">
+      <nav className="fixed top-0 left-0 w-full h-[56px] max-h-[56px] xl:max-h-[116px] xl:h-[116px] flex items-center justify-between xl:items-start xl:justify-normal py-[8px] px-[16px] xl:p-0 bg-logo-mobile-background xl:bg-[#1A1D2F] z-[50]">
         
         <LogoSection />
 
@@ -39,12 +41,16 @@ function App() {
         </div>
       </nav>
 
-      <div className="mt-[56px] xl:mt-[116px] w-screen flex flex-col ">
+      <div className="mt-[56px] xl:mt-[116px] w-full flex flex-col ">
         
         <Banner />
 
         <BenefitsCards />
-        
+
+        <HowDoesItWork />
+
+        <ProgressiveAffiliateSystem />
+
       </div>
       
 
