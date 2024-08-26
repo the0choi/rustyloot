@@ -55,13 +55,13 @@ const ProgressiveAffiliateSystem = () => {
   };
 
   return (
-    <div className={`flex flex-col items-center sm:gap-[16px] xl:gap-[20px] self-stretch bg-[linear-gradient(270deg,_#151628_0%,_#171A31_50%,_#15172B_100%)]`}>
-      <div className="pt-[24px] sm:pt-[32px] xl:pt-[56px] px-[16px] sm:px-[0px] w-full">
-        <div className="flex flex-col items-center justify-center gap-[4px] xl:gap-[8px]">
-          <span className="text-[#FFF] text-center text-[18px] xl:text-[24px] font-bold leading-[23px] xl:leading-[31px] tracking-[0.1px] self-stretch">
+    <div className={`flex flex-col items-center sm:gap-[16px] lg:gap-[20px] self-stretch bg-[linear-gradient(270deg,_#151628_0%,_#171A31_50%,_#15172B_100%)]`}>
+      <div className="pt-[24px] sm:pt-[32px] lg:pt-[56px] px-[16px] sm:px-[0px] w-full">
+        <div className="flex flex-col items-center justify-center gap-[4px] lg:gap-[8px]">
+          <span className="text-[#FFF] text-center text-[18px] lg:text-[24px] font-bold leading-[23px] lg:leading-[31px] tracking-[0.1px] self-stretch">
             Progressive Affiliate System
           </span>
-          <span className="mx-auto w-[344px] sm:w-[420px] xl:w-[500px] text-[#6A6FA3] text-center text-[11px] xl:text-[13px] font-bold leading-[14px] xl:leading-[17px] tracking-[0.1px] self-stretch">
+          <span className="mx-auto w-[344px] sm:w-[420px] lg:w-[500px] text-[#6A6FA3] text-center text-[11px] lg:text-[13px] font-bold leading-[14px] lg:leading-[17px] tracking-[0.1px] self-stretch">
             The more users you refer the greater the rewards. Ascend through the ranks
             to get up to 5% of every deposit and unlock exclusive features and rewards.
           </span>
@@ -79,7 +79,7 @@ const ProgressiveAffiliateSystem = () => {
 
         <BadgeCard 
           badgeImage={ironBadge}
-          badgeStyle="w-[20px] xl:w-[30px] h-[22px] xl:h-[33px] translate-x-[17px] xl:translate-x-[28px] translate-y-[16px] xl:translate-y-[26.5px]" 
+          badgeStyle="w-[20px] lg:w-[30px] h-[22px] lg:h-[33px] translate-x-[17px] lg:translate-x-[28px] translate-y-[16px] lg:translate-y-[26.5px]" 
           badgeName="IRON" 
           textColor="#A3B1B4"
           textContent="Unlocked"
@@ -124,7 +124,7 @@ const ProgressiveAffiliateSystem = () => {
 
         <BadgeCard 
           badgeImage={copperBadge}
-          badgeStyle="w-[30px] xl:w-[44px] h-[23px] xl:h-[34px] translate-x-[12px] xl:translate-x-[21px] translate-y-[15.5px] xl:translate-y-[26px]"  
+          badgeStyle="w-[30px] lg:w-[44px] h-[23px] lg:h-[34px] translate-x-[12px] lg:translate-x-[21px] translate-y-[15.5px] lg:translate-y-[26px]"  
           badgeName="COPPER" 
           textColor="#C98152"
           textContent="Unlocked"
@@ -169,7 +169,7 @@ const ProgressiveAffiliateSystem = () => {
 
         <BadgeCard 
           badgeImage={titaniumBadge}
-          badgeStyle="w-[32px] xl:w-[48px] h-[28px] xl:h-[42px] translate-x-[11px] xl:translate-x-[19px] translate-y-[13px] xl:translate-y-[22px]"  
+          badgeStyle="w-[32px] lg:w-[48px] h-[28px] lg:h-[42px] translate-x-[11px] lg:translate-x-[19px] translate-y-[13px] lg:translate-y-[22px]"  
           badgeName="TITANIUM" 
           textColor="#A3B1B4"
           textContent="Unlocked"
@@ -214,7 +214,7 @@ const ProgressiveAffiliateSystem = () => {
 
         <BadgeCard 
           badgeImage={opalBadge}
-          badgeStyle="w-[29.25px] xl:w-[45px] h-[27px] xl:h-[42px] translate-x-[12.4px] xl:translate-x-[20.5px] translate-y-[13.5px] xl:translate-y-[22px]"  
+          badgeStyle="w-[29.25px] lg:w-[45px] h-[27px] lg:h-[42px] translate-x-[12.4px] lg:translate-x-[20.5px] translate-y-[13.5px] lg:translate-y-[22px]"  
           badgeName="OPAL" 
           textColor="#CA83F5"
           textContent="Unlocked"
@@ -259,7 +259,7 @@ const ProgressiveAffiliateSystem = () => {
 
         <BadgeCard 
           badgeImage={amberBadge}
-          badgeStyle="w-[32px] xl:w-[48px] h-[32px] xl:h-[48px] translate-x-[11px] xl:translate-x-[19px] translate-y-[11px] xl:translate-y-[19px]"  
+          badgeStyle="w-[32px] lg:w-[48px] h-[32px] lg:h-[48px] translate-x-[11px] lg:translate-x-[19px] translate-y-[11px] lg:translate-y-[19px]"  
           badgeName="AMBER" 
           textColor="#6A6FA3"
           textContent="Locked"
@@ -296,11 +296,13 @@ const ProgressiveAffiliateSystem = () => {
         />
         
         {/* Creates even spacing on the right side at the end of the overflow */}
-        <div className="mr-[6px]"></div>
+        {isOverflowing && (
+          <div className="mr-[6px]"></div>
+        )}
 
       </div>
       
-      <div className="pb-[16px] sm:pb-[32px] xl:pb-[56px] px-[16px] w-full sm:w-auto">
+      <div className="pb-[16px] sm:pb-[32px] lg:pb-[56px] px-[16px] w-full sm:w-auto">
         
         {/* View Tiers Button */}
         <div className="w-full sm:w-auto flex h-[40px] items-center cursor-pointer">

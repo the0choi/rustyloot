@@ -5,40 +5,40 @@ import freeCoins from '../assets/images/freeCoins.png';
 
 const HowDoesItWork = () => {
   return (
-    <div className="relative w-full xl:h-[580px] self-stretch flex flex-wrap items-center justify-center gap-[20px] sm:gap-[32px] xl:gap-0 px-[16px] sm:px-[40px] py-[32px] sm:py-[64px] xl:py-[100px] bg-[linear-gradient(107deg,_#17182F_0%,_#151628_67.29%)]">
+    <div className="relative w-full lg:h-[450px] xl:h-[580px] self-stretch flex flex-wrap items-center justify-center gap-[20px] sm:gap-[32px] xl:gap-0 px-[16px] sm:px-[40px] py-[32px] sm:py-[64px] lg:py-[80px] xl:py-[100px] bg-[linear-gradient(107deg,_#17182F_0%,_#151628_67.29%)]">
       <img src={bannerHowDoesItWork} className="absolute inset-0 w-full h-full block object-cover opacity-70" />
-      <div className="w-[344px] sm:w-[256px] xl:w-[485px] flex flex-col items-start gap-[12px] xl:gap-[16px] z-10">
-        <span className="self-stretch text-[#FFF] text-left font-bold text-[16px] sm:text-[18px] xl:text-[24px] leading-[20px] sm:leading-[23px] xl:leading-[31px] tracking-[0.1px]">How does it work?</span>
+      <div className="w-[344px] sm:w-[256px] lg:w-[350px] xl:w-[485px] flex flex-col items-start gap-[12px] xl:gap-[16px] z-10">
+        <span className="self-stretch text-[#FFF] text-left font-bold text-[16px] sm:text-[18px] lg:text-[20px] xl:text-[24px] leading-[20px] sm:leading-[23px] lg:leading-[26px] xl:leading-[31px] tracking-[0.1px]">How does it work?</span>
         <div className="flex flex-col gap-[12px] sm:gap-[16px]">
           <div className="flex items-center gap-[16px] self-stretch">
-            <div className="w-[32px] xl:w-[40px] h-[32px] xl:h-[40px] flex items-center justify-center shrink-0 rounded-[4px] border border-1 border-[#2C3053] bg-[radial-gradient(106.76%_124.95%_at_77.08%_-35.83%,_#262A50_32.6%,_#1D1F36_100%)]">
-              <div className="h-[16px] xl:h-[20px] shrink-0">
+            <div className="w-[32px] lg:w-[40px] xl:w-[40px] h-[32px] lg:h-[40px] xl:h-[40px] flex items-center justify-center shrink-0 rounded-[4px] border border-1 border-[#2C3053] bg-[radial-gradient(106.76%_124.95%_at_77.08%_-35.83%,_#262A50_32.6%,_#1D1F36_100%)]">
+              <div className="h-[16px] lg:h-[20px] xl:h-[20px] shrink-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none" className="w-full h-full">
                   <path fillRule="evenodd" clipRule="evenodd" d="M10.1168 1.58379C9.03985 1.58379 8.16368 2.45996 8.16368 3.53691V5.02128H2.65083L2.28993 4.0362C2.14126 3.63046 2.35024 3.18113 2.7563 3.03331L9.58649 0.547344C9.6747 0.515234 9.76493 0.5 9.85364 0.5C10.1738 0.5 10.4742 0.698242 10.5888 1.01699L10.7927 1.58379H10.1168ZM9.33594 3.53695C9.33594 3.10547 9.6857 2.7557 10.1172 2.7557H15.3906C15.8221 2.7557 16.1719 3.10547 16.1719 3.53695V5.02132H9.33594V3.53695ZM18.2422 16.2908H15.5078C13.8924 16.2908 12.5781 14.9766 12.5781 13.3611C12.5781 11.7457 13.8924 10.4315 15.5078 10.4315H18.2422V7.75569C18.2422 6.89276 17.5426 6.19319 16.6797 6.19319H1.5625C0.69957 6.19319 0 6.89276 0 7.75569V18.9375C0 19.8004 0.69957 20.5 1.5625 20.5H16.6797C17.5426 20.5 18.2422 19.8004 18.2422 18.9375V16.2908ZM15.5078 11.6033H19.4141C19.7371 11.6033 20 11.8662 20 12.1893V14.533C20 14.8561 19.7371 15.119 19.4141 15.119H15.5078C14.5386 15.119 13.75 14.3304 13.75 13.3611C13.75 12.3919 14.5386 11.6033 15.5078 11.6033ZM14.9219 13.3611C14.9219 13.6847 15.1842 13.9471 15.5078 13.9471C15.8314 13.9471 16.0938 13.6847 16.0938 13.3611C16.0938 13.0376 15.8314 12.7752 15.5078 12.7752C15.1842 12.7752 14.9219 13.0376 14.9219 13.3611Z" fill="#545784"/>
                 </svg>
               </div>
             </div>
-            <span className="min-w-[300px] sm:min-w-[0px] max-w-[300px] sm:max-w-[212px] xl:max-w-[300px] self-stretch text-left text-[#6A6FA3] font-bold text-[11px] xl:text-[13px] leading-[14px] xl:leading-[17px] tracking-[0.1px]">
+            <span className="min-w-[300px] sm:min-w-[0px] max-w-[300px] sm:max-w-[212px] lg:max-w-[290px] xl:max-w-[300px] self-stretch text-left text-[#6A6FA3] font-bold text-[11px] lg:text-[12px] xl:text-[13px] leading-[14px] lg:leading-[16px] xl:leading-[17px] tracking-[0.1px]">
               Make sure your friends apply your code when depositing or when claiming their free coins
             </span>
           </div>
 
           <div className="flex items-center gap-[16px] self-stretch">
-            <div className="w-[32px] xl:w-[40px] h-[32px] xl:h-[40px] flex items-center justify-center shrink-0 rounded-[4px] border border-1 border-[#2C3053] bg-[radial-gradient(106.76%_124.95%_at_77.08%_-35.83%,_#262A50_32.6%,_#1D1F36_100%)]">
-              <div className="h-[16px] xl:h-[20px] shrink-0">
+            <div className="w-[32px] lg:w-[40px] xl:w-[40px] h-[32px] lg:h-[40px] xl:h-[40px] flex items-center justify-center shrink-0 rounded-[4px] border border-1 border-[#2C3053] bg-[radial-gradient(106.76%_124.95%_at_77.08%_-35.83%,_#262A50_32.6%,_#1D1F36_100%)]">
+              <div className="h-[16px] lg:h-[20px] xl:h-[20px] shrink-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="21" viewBox="0 0 16 21" fill="none" className="w-full h-full">
                   <path fillRule="evenodd" clipRule="evenodd" d="M10.6861 5.20121H5.02804L3.23524 1.69237C3.19561 1.6148 3.17245 1.52898 3.1674 1.44092C3.16235 1.35286 3.17551 1.26469 3.20598 1.1826C3.23645 1.10051 3.28348 1.02648 3.34378 0.965704C3.40407 0.904929 3.47617 0.85888 3.55502 0.830784C5.2826 0.215323 6.73775 0.587075 8.02178 0.915111L8.02191 0.915144L8.02247 0.915286C9.3207 1.2469 10.442 1.53331 11.7242 0.861834C11.8327 0.804999 11.9555 0.786266 12.0747 0.808346C12.194 0.830427 12.3035 0.892175 12.3875 0.984656C12.4714 1.07714 12.5255 1.19555 12.5418 1.32277C12.558 1.44998 12.5358 1.5794 12.4781 1.69229L10.6861 5.20121ZM11.0588 6.4106L11.2827 6.65658C12.439 7.92537 13.5312 9.12387 14.3441 10.4654C15.2789 12.008 15.7143 13.5203 15.7143 15.2246C15.7143 17.2037 14.7142 18.7133 12.8223 19.5903C11.2004 20.3422 9.22671 20.5 7.85661 20.5C6.49643 20.5 4.53361 20.3422 2.90703 19.5907C1.00527 18.7119 0 17.2021 0 15.2246C0 13.5202 0.435397 12.008 1.37014 10.4654C2.18311 9.12387 3.27525 7.92537 4.43145 6.65658L4.65535 6.4106H11.0588ZM9.16687 12.6978C8.80462 12.4446 8.3823 12.3503 7.97386 12.2591H7.97402C7.11714 12.0679 6.97742 11.9604 6.97726 11.4924C6.97726 11.0766 7.37168 10.7383 7.85646 10.7383C8.34124 10.7383 8.73566 11.0765 8.73566 11.4924C8.73566 11.6528 8.79574 11.8067 8.90269 11.9201C9.00964 12.0335 9.15469 12.0973 9.30594 12.0973C9.4572 12.0973 9.60225 12.0335 9.7092 11.9201C9.81615 11.8067 9.87623 11.6528 9.87623 11.4924C9.87623 10.602 9.26355 9.84863 8.42675 9.6087V9.29787C8.42675 9.13745 8.36666 8.9836 8.25972 8.87016C8.15276 8.75673 8.00771 8.693 7.85646 8.693C7.70521 8.693 7.56015 8.75673 7.4532 8.87016C7.34625 8.9836 7.28617 9.13745 7.28617 9.29787V9.60882C6.44937 9.84875 5.83668 10.6021 5.83668 11.4925C5.83668 12.1666 6.07533 12.6752 6.54605 13.0043C6.90826 13.2575 7.33061 13.3518 7.73902 13.443C8.59593 13.6342 8.73566 13.7418 8.73566 14.2096C8.73566 14.6248 8.34124 14.9627 7.85646 14.9627C7.37168 14.9627 6.97726 14.6249 6.97726 14.2096C6.97726 14.0492 6.91718 13.8953 6.81023 13.7819C6.70328 13.6684 6.55822 13.6047 6.40697 13.6047C6.25572 13.6047 6.11067 13.6684 6.00372 13.7819C5.89677 13.8953 5.83668 14.0492 5.83668 14.2096C5.83668 15.0994 6.44937 15.8524 7.28617 16.0922V16.4042C7.28617 16.5647 7.34625 16.7185 7.4532 16.8319C7.56015 16.9454 7.70521 17.0091 7.85646 17.0091C8.00771 17.0091 8.15276 16.9454 8.25972 16.8319C8.36666 16.7185 8.42675 16.5647 8.42675 16.4042V16.0922C9.26355 15.8524 9.87623 15.0994 9.87623 14.2096C9.87623 13.5355 9.63755 13.0269 9.16687 12.6978Z" fill="#545784"/>
                 </svg>
               </div>
             </div>
-            <span className="min-w-[300px] sm:min-w-[0px] max-w-[300px] sm:max-w-[212px] xl:max-w-[300px] self-stretch text-left text-[#6A6FA3] font-bold text-[11px] xl:text-[13px] leading-[14px] xl:leading-[17px] tracking-[0.1px]">
+            <span className="min-w-[300px] sm:min-w-[0px] max-w-[300px] sm:max-w-[212px] lg:max-w-[290px] xl:max-w-[300px] self-stretch text-left text-[#6A6FA3] font-bold text-[11px] lg:text-[12px] xl:text-[13px] leading-[14px] lg:leading-[16px] xl:leading-[17px] tracking-[0.1px]">
               Each player using your code will activate their rakeback and the option to claim two rewards
             </span>
           </div>
 
           <div className="flex items-center gap-[16px] self-stretch">
-            <div className="w-[32px] xl:w-[40px] h-[32px] xl:h-[40px] flex items-center justify-center shrink-0 rounded-[4px] border border-1 border-[#2C3053] bg-[radial-gradient(106.76%_124.95%_at_77.08%_-35.83%,_#262A50_32.6%,_#1D1F36_100%)]">
-              <div className="h-[16px] xl:h-[20px] shrink-0">
+            <div className="w-[32px] lg:w-[40px] xl:w-[40px] h-[32px] lg:h-[40px] xl:h-[40px] flex items-center justify-center shrink-0 rounded-[4px] border border-1 border-[#2C3053] bg-[radial-gradient(106.76%_124.95%_at_77.08%_-35.83%,_#262A50_32.6%,_#1D1F36_100%)]">
+              <div className="h-[16px] lg:h-[20px] xl:h-[20px] shrink-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21" viewBox="0 0 24 21" fill="none" className="w-full h-full">
                   <path d="M15.0369 5.7688C10.934 5.7688 7.59644 9.14535 7.59644 13.2957C7.59644 17.446 10.934 20.8225 15.0369 20.8225C19.1398 20.8225 22.4774 17.446 22.4774 13.2957C22.4774 9.1454 19.1398 5.7688 15.0369 5.7688ZM15.4704 12.6839C16.2717 13.2646 17.269 13.9874 17.269 15.1774C17.269 16.1574 16.6451 16.9851 15.7809 17.2968V17.8118C15.7809 18.2276 15.4477 18.5645 15.0369 18.5645C14.6261 18.5645 14.2928 18.2276 14.2928 17.8118V17.2968C13.4286 16.985 12.8047 16.1574 12.8047 15.1774C12.8047 14.7616 13.138 14.4247 13.5488 14.4247C13.9595 14.4247 14.2928 14.7616 14.2928 15.1774C14.2928 15.5924 14.6266 15.9301 15.0369 15.9301C15.4472 15.9301 15.781 15.5925 15.781 15.1774C15.781 14.7609 15.1823 14.327 14.6034 13.9075C13.8021 13.3268 12.8048 12.604 12.8048 11.414C12.8048 10.434 13.4287 9.60634 14.2929 9.29465V8.77959C14.2929 8.3638 14.6261 8.02688 15.0369 8.02688C15.4477 8.02688 15.781 8.3638 15.781 8.77959V9.29465C16.6452 9.60638 17.2691 10.434 17.2691 11.414C17.2691 11.8298 16.9358 12.1667 16.525 12.1667C16.1143 12.1667 15.781 11.8298 15.781 11.414C15.781 10.999 15.4472 10.6613 15.0369 10.6613C14.6267 10.6613 14.2928 10.9989 14.2928 11.414C14.2928 11.8305 14.8915 12.2644 15.4704 12.6839Z" fill="#545784"/>
                   <path d="M6.68735 5.86586C9.8836 5.86586 12.4747 4.66467 12.4747 3.18293C12.4747 1.70119 9.8836 0.5 6.68735 0.5C3.4911 0.5 0. 0.5 6.68735 0.5C3.4911 0.5 0.900024 1.70119 0.900024 3.18293C0.900024 4.66467 3.4911 5.86586 6.68735 5.86586Z" fill="#545784"/>
@@ -48,7 +48,7 @@ const HowDoesItWork = () => {
                 </svg>
               </div>
             </div>
-            <span className=" sm:min-w-[0px] sm:max-w-[212px] xl:max-w-[300px] self-stretch text-left text-[#6A6FA3] font-bold text-[11px] xl:text-[13px] leading-[14px] xl:leading-[17px] tracking-[0.1px]">
+            <span className="min-w-[300px] sm:min-w-[0px] max-w-[300px] sm:max-w-[212px] lg:max-w-[290px] xl:max-w-[300px] self-stretch text-left text-[#6A6FA3] font-bold text-[11px] lg:text-[12px] xl:text-[13px] leading-[14px] lg:leading-[16px] xl:leading-[17px] tracking-[0.1px]">
               You earn a commission on each deposit players make while using your code
             </span>
           </div>

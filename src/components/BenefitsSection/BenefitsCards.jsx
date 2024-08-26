@@ -54,14 +54,14 @@ const BenefitsCards = () => {
   return (
     <div 
       ref={containerRef}
-      className={`overflow-hidden relative ${isDragging ? 'cursor-grabbing' : isOverflowing ? 'cursor-grab' : 'cursor-default'} bg-[linear-gradient(107deg,_#17182F_0%,_#151628_67.29%)] p-[16px] xl:pt-[80px] xl:pb-[0px]`}
+      className={`overflow-hidden relative ${isDragging ? 'cursor-grabbing' : isOverflowing ? 'cursor-grab' : 'cursor-default'} bg-[linear-gradient(107deg,_#17182F_0%,_#151628_67.29%)] p-[16px] lg:pt-[50px] xl:pt-[80px] lg:pb-[0px] xl:pb-[0px]`}
       onMouseDown={handleMouseDown}
       onMouseLeave={handleMouseLeaveOrUp}
       onMouseUp={handleMouseLeaveOrUp}
       onMouseMove={handleMouseMove}
     >
       <div 
-        className={`flex ${isOverflowing ? 'justify-start' : 'justify-center'} items-center gap-[12px] xl:gap-[16px]`}
+        className={`flex ${isOverflowing ? 'justify-start' : 'justify-center'} items-center gap-[12px] lg:gap-[14px] xl:gap-[16px]`}
       >
         <BenefitsCard
           image={othersCard} 
@@ -80,7 +80,10 @@ const BenefitsCards = () => {
         />
         
         {/* Creates even spacing on the right side at the end of the overflow */}
-        <div className="w-[6px] h-[225px] flex-none"></div>
+        {isOverflowing && (
+          <div className="w-[6px] h-[225px] flex-none"></div>
+        )}
+        
       </div>
     </div>
   );

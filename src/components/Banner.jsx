@@ -4,18 +4,18 @@ import bannerAffiliates from '../assets/images/bannerAffiliates.png';
 const Banner = () => {
   return (
     <div className="bg-[linear-gradient(107deg,_#17182F_0%,_#151628_67.29%)]">
-      <div className="relative w-full sm:h-[225px] xl:h-[468px] flex items-center justify-center p-[16px] sm:justify-start sm:pl-[40px] xl:pl-[236px] self-stretch bg-[linear-gradient(107deg,_#17182F_0%,_#151628_67.29%)]">
+      <div className="relative w-full sm:h-[225px] lg:h-[350px] xl:h-[468px] flex items-center justify-center p-[16px] sm:justify-start sm:pl-[40px] lg:pl-[130px] xl:pl-[236px] self-stretch bg-[linear-gradient(107deg,_#17182F_0%,_#151628_67.29%)]">
         <img 
           src={bannerAffiliates} 
           className="absolute inset-0 w-full h-full hidden sm:block object-cover opacity-50" 
           alt="Banner Affiliates"  
         />
-        <div className="z-10 w-full flex flex-col items-center sm:items-start gap-[16px] sm:gap-[20px] xl:gap-[40px]">
+        <div className="z-10 w-full flex flex-col items-center sm:items-start gap-[16px] sm:gap-[20px] lg:gap-[30px] xl:gap-[40px]">
           <div className="flex flex-col items-center sm:items-start gap-[2px] sm:gap-[6px]">
-            <span className="text-[#fff] text-[20px] sm:text-[24px] xl:text-[40px] leading-[26px] sm:leading-[31px] xl:leading-[51px] font-bold tracking-[0.1px]">
+            <span className="text-[#fff] text-[20px] sm:text-[24px] lg:text-[30px] xl:text-[40px] leading-[26px] sm:leading-[31px] lg:leading-[41px] xl:leading-[51px] font-bold tracking-[0.1px]">
               Earn with us
             </span>
-            <span className="text-[#9A9EC8] text-[13px] sm:text-[14px] xl:text-[16px] leading-[17px] sm:leading-[18px] xl:leading-[20px] font-bold tracking-[0.1px]">
+            <span className="text-[#9A9EC8] text-[13px] sm:text-[14px] lg:text-[15px] xl:text-[16px] leading-[17px] sm:leading-[18px] lg:leading-[19px] xl:leading-[20px] font-bold tracking-[0.1px]">
               Earn up to 4% on your friend&apos;s deposits
             </span>
           </div>
