@@ -26,12 +26,12 @@ const ProgressiveAffiliateSystem = () => {
 
   return (
     <div className={`flex flex-col items-center sm:gap-[16px] xl:gap-[20px] self-stretch bg-[linear-gradient(270deg,_#151628_0%,_#171A31_50%,_#15172B_100%)]`}>
-      <div className="pt-[24px] sm:pt-[32px] px-[16px] sm:px-[0px] w-full">
+      <div className="pt-[24px] sm:pt-[32px] xl:pt-[56px] px-[16px] sm:px-[0px] w-full">
         <div className="flex flex-col items-center justify-center gap-[4px] xl:gap-[8px]">
           <span className="text-[#FFF] text-center text-[18px] xl:text-[24px] font-bold leading-[23px] xl:leading-[31px] tracking-[0.1px] self-stretch">
             Progressive Affiliate System
           </span>
-          <span className="mx-auto w-[344px] sm:w-[500px] text-[#6A6FA3] text-center text-[11px] xl:text-[13px] font-bold leading-[14px] xl:leading-[17px] tracking-[0.1px] self-stretch">
+          <span className="mx-auto w-[344px] sm:w-[420px] xl:w-[500px] text-[#6A6FA3] text-center text-[11px] xl:text-[13px] font-bold leading-[14px] xl:leading-[17px] tracking-[0.1px] self-stretch">
             The more users you refer the greater the rewards. Ascend through the ranks
             to get up to 5% of every deposit and unlock exclusive features and rewards.
           </span>
@@ -265,12 +265,17 @@ const ProgressiveAffiliateSystem = () => {
 
       </div>
       
-      <div className="pb-[16px] sm:pb-[32px] px-[16px] w-full sm:w-auto">
+      <div className="pb-[16px] sm:pb-[32px] xl:pb-[56px] px-[16px] w-full sm:w-auto">
+        
+        {/* View Tiers Button */}
         <div className="w-full sm:w-auto flex h-[40px] items-center cursor-pointer">
-          <div className="w-full flex items-center justify-center px-[16px] py-[10px] gap-[6px] rounded-[4px] border border-1 border-[#664B33] bg-[radial-gradient(63.62%_115%_at_46.04%_0%,_#473C39_0%,_#473C39_0.01%,_#202139_100%)]">
-            <span className="text-[#FFB436] text-center text-[14px] leading-[18px] tracking-[0.1px] font-bold">View Tiers</span>
+          <div className="w-full bg-[linear-gradient(180deg,_#664B33,_#876231,_#876231)] p-[1px] rounded-[4px]">
+            <div className="w-full flex items-center justify-center px-[16px] py-[10px] gap-[6px] bg-[radial-gradient(63.62%_115%_at_46.04%_0%,_#473C39_0%,_#473C39_0.01%,_#202139_100%)] rounded-[3px]">
+              <span className="text-[#FFB436] text-center text-[14px] leading-[18px] tracking-[0.1px] font-bold">View Tiers</span>
+            </div>
           </div>
         </div>
+
       </div>
 
     </div>

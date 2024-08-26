@@ -2,8 +2,8 @@ import gamesArrowDownIcon from '../assets/images/gamesArrowDown.svg';
 
 const GamesDropdown = () => {
   return (
-    <div className="max-w-[143px] w-[143px] h-[40px] hidden xl:block flex justify-between items-center bg-[linear-gradient(266deg,rgb(32,36,71)_54.3%,rgb(44,41,50)_96.88%),linear-gradient(259deg,rgb(39,43,76)_65.15%,rgb(79,60,56)_99.34%)] rounded-[4px] border border-1 border-white/5 cursor-pointer">
-      <div className="flex justify-between items-center w-full h-full px-[12px] py-[11px]">
+    <div className="max-w-[143px] w-[143px] h-[40px] hidden xl:block flex justify-between items-center p-[1px] bg-[linear-gradient(225deg,_#272B4C_64%,_#4F3C38_100%)] rounded-[4px] cursor-pointer">
+      <div className="flex justify-between items-center w-full h-full px-[12px] py-[11px] rounded-[3px] bg-[linear-gradient(270deg,_#202447_55%,_#2C2932_100%)]">
         <div className="flex gap-[8px] items-center"> 
           <svg viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg" width="14" height="10" alt="Games Icon">
             <path d="M24 3.09675V4.40861H0V3.09675L1.7507 0H22.2493L24 3.09675Z" fill="#FFB436"></path>

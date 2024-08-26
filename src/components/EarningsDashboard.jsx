@@ -6,7 +6,7 @@ const EarningsDashboard = () => {
     <div className="relative px-[16px] sm:px-[24px] py-[32px] sm:py-[64px] flex flex-wrap justify-center items-center gap-[16px] sm:gap-[24px] xl:gap-[80px] bg-[linear-gradient(107deg,_#17182F_0%,_#151628_67.29%)]">
       <img 
         src={affiliatesBackground} 
-        className="absolute inset-0 w-full h-full block object-cover self-stretch opacity-50" 
+        className="absolute inset-0 w-full h-full block object-cover self-stretch opacity-30" 
       />
       <img 
         className="w-[344px] sm:w-[400px] xl:w-[668px] h-[193px] sm:h-[225px] xl:h-[376px] rounded-[4px] border border-[#2c3054] z-10" 

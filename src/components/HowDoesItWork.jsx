@@ -6,7 +6,7 @@ import freeCoins from '../assets/images/freeCoins.png';
 const HowDoesItWork = () => {
   return (
     <div className="relative w-full xl:h-[580px] self-stretch flex flex-wrap items-center justify-center gap-[20px] sm:gap-[32px] xl:gap-0 px-[16px] sm:px-[40px] py-[32px] sm:py-[64px] xl:py-[100px] bg-[linear-gradient(107deg,_#17182F_0%,_#151628_67.29%)]">
-      <img src={bannerHowDoesItWork} className="absolute inset-0 w-full h-full block object-cover" />
+      <img src={bannerHowDoesItWork} className="absolute inset-0 w-full h-full block object-cover opacity-70" />
       <div className="w-[344px] sm:w-[256px] xl:w-[485px] flex flex-col items-start gap-[12px] xl:gap-[16px] z-10">
         <span className="self-stretch text-[#FFF] text-left font-bold text-[16px] sm:text-[18px] xl:text-[24px] leading-[20px] sm:leading-[23px] xl:leading-[31px] tracking-[0.1px]">How does it work?</span>
         <div className="flex flex-col gap-[12px] sm:gap-[16px]">
