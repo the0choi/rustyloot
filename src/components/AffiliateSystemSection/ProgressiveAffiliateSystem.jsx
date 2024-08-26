@@ -1,15 +1,18 @@
 import { useEffect, useRef, useState } from 'react';
 
-import ironBadge from '../assets/images/ironBadge.png';
-import copperBadge from '../assets/images/copperBadge.png';
-import titaniumBadge from '../assets/images/titaniumBadge.png';
-import opalBadge from '../assets/images/opalBadge.png';
-import amberBadge from '../assets/images/amberBadge.png';
+import ironBadge from '../../assets/images/ironBadge.png';
+import copperBadge from '../../assets/images/copperBadge.png';
+import titaniumBadge from '../../assets/images/titaniumBadge.png';
+import opalBadge from '../../assets/images/opalBadge.png';
+import amberBadge from '../../assets/images/amberBadge.png';
 
 import BadgeCard from './BadgeCard';
 
 const ProgressiveAffiliateSystem = () => {
   const containerRef = useRef(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
   const [isOverflowing, setIsOverflowing] = useState(false);
 
   useEffect(() => {
@@ -23,6 +26,33 @@ const ProgressiveAffiliateSystem = () => {
     window.addEventListener('resize', checkOverflow);
     return () => window.removeEventListener('resize', checkOverflow);
   }, []);
+
+  const handleMouseDown = (e) => {
+    if (!isOverflowing) return;
+    setIsDragging(true);
+    setStartX(e.pageX - containerRef.current.offsetLeft);
+    setScrollLeft(containerRef.current.scrollLeft);
+    document.body.style.userSelect = 'none';
+  };
+
+  const handleMouseLeaveOrUp = () => {
+    setIsDragging(false);
+    document.body.style.userSelect = '';
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - containerRef.current.offsetLeft;
+    const walk = (x - startX) * 1.5;
+    const maxScroll = containerRef.current.scrollWidth - containerRef.current.clientWidth;
+    const newScrollLeft = Math.max(0, Math.min(maxScroll, scrollLeft - walk));
+    
+    containerRef.current.scrollTo({
+      left: newScrollLeft,
+      behavior: 'smooth'
+    });
+  };
 
   return (
     <div className={`flex flex-col items-center sm:gap-[16px] xl:gap-[20px] self-stretch bg-[linear-gradient(270deg,_#151628_0%,_#171A31_50%,_#15172B_100%)]`}>
@@ -40,7 +70,12 @@ const ProgressiveAffiliateSystem = () => {
 
       <div 
         ref={containerRef} 
-        className={`w-full flex overflow-x-auto ${isOverflowing ? 'justify-start' : 'justify-center'} py-[16px] pl-[16px] sm:px-[16px] sm:py-[0px] items-center gap-[10px] sm:gap-[12px]`}>
+        className={`w-full flex overflow-hidden ${isDragging ? 'cursor-grabbing' : isOverflowing ? 'justify-start cursor-grab' : 'justify-center cursor-default'} py-[16px] pl-[16px] sm:px-[16px] sm:py-[0px] items-start gap-[10px] sm:gap-[12px]`}
+        onMouseDown={handleMouseDown}
+        onMouseLeave={handleMouseLeaveOrUp}
+        onMouseUp={handleMouseLeaveOrUp}
+        onMouseMove={handleMouseMove}
+        >
 
         <BadgeCard 
           badgeImage={ironBadge}

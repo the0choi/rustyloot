@@ -2,7 +2,7 @@ import gamesArrowDownIcon from '../assets/images/gamesArrowDown.svg';
 
 const GamesDropdown = () => {
   return (
-    <div className="max-w-[143px] w-[143px] h-[40px] hidden xl:block flex justify-between items-center p-[1px] bg-[linear-gradient(225deg,_#272B4C_64%,_#4F3C38_100%)] rounded-[4px] cursor-pointer">
+    <div className="max-w-[143px] w-[143px] h-[40px] hidden lg:block flex justify-between items-center p-[1px] bg-[linear-gradient(225deg,_#272B4C_64%,_#4F3C38_100%)] rounded-[4px] cursor-pointer">
       <div className="flex justify-between items-center w-full h-full px-[12px] py-[11px] rounded-[3px] bg-[linear-gradient(270deg,_#202447_55%,_#2C2932_100%)]">
         <div className="flex gap-[8px] items-center"> 
           <svg viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg" width="14" height="10" alt="Games Icon">

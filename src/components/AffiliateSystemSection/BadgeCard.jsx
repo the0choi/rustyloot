@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 
-
 const BadgeCard = ({ badgeImage, badgeStyle, badgeName, textColor, backgroundColor, icon, textContent, semicircleGradient, circleGradient, bottomGradient, current }) => {
   return (
     <div className="min-w-[130px] xl:w-[170px] flex flex-col items-start">

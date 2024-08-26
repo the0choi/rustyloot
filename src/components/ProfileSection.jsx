@@ -5,7 +5,7 @@ import DropdownButton from './DropdownButton';
 
 const ProfileSection = () => {
   return (
-    <div className="hidden xl:flex items-center justify-end gap-[20px]">
+    <div className="hidden lg:flex items-center justify-end gap-[20px]">
       <div className="flex items-center gap-[8px] cursor-pointer">
         <div className="h-[40px] w-[40px] relative flex items-center justify-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
