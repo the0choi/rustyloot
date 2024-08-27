@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 
 const BadgeCard = ({ badgeImage, badgeStyle, badgeName, textColor, backgroundColor, icon, textContent, semicircleGradient, circleGradient, bottomGradient, current }) => {
   return (
-    <div className="min-w-[130px] xl:w-[170px] flex flex-col items-start">
-      <div className={`relative h-[150px] xl:h-[215px] flex flex-col justify-end items-center xl:gap-[20px] self-stretch xl:pt-[34px] rounded-[6px] ${backgroundColor}`}>
+    <div className="min-w-[130px] lg:w-[170px] flex flex-col items-start">
+      <div className={`relative h-[150px] lg:h-[215px] flex flex-col justify-end items-center lg:gap-[20px] self-stretch lg:pt-[34px] rounded-[6px] ${backgroundColor}`}>
         {current && (
           <div className="absolute right-0 top-0 h-[20px] px-[6px] py-[3px] border border-1 flex justify-center items-center gap-[4px] rounded-[4px] border-[#4A4E6B] bg-[radial-gradient(106.76%_124.95%_at_77.08%_-35.83%,_#3D4164_32.6%,_#353950_100%)] ">
             <span className="text-[#9A9EC8] text-[12px] font-bold leading-[15px] tracking-[0.1px]">
@@ -11,10 +11,10 @@ const BadgeCard = ({ badgeImage, badgeStyle, badgeName, textColor, backgroundCol
             </span>
           </div>
         )}
-        <div className="w-[130px] xl:w-[170px] h-[42px] xl:h-[68.331px] absolute left-0 top-0 translate-y-[54px] xl:translate-y-[73px]">
+        <div className="w-[130px] lg:w-[170px] h-[42px] lg:h-[68.331px] absolute left-0 top-0 translate-y-[54px] lg:translate-y-[73px]">
           {semicircleGradient}
         </div>
-        <div className="relative w-[54px] xl:w-[86px] h-[54px] xl:h-[86px] -translate-y-[17px] xl:-translate-y-[0px] shrink-0">
+        <div className="relative w-[54px] lg:w-[86px] h-[54px] lg:h-[86px] -translate-y-[17px] lg:-translate-y-[0px] shrink-0">
             {circleGradient}
           
           <img 
@@ -24,7 +24,7 @@ const BadgeCard = ({ badgeImage, badgeStyle, badgeName, textColor, backgroundCol
           />
         </div>
 
-        <div className={`pb-[20px] xl:pb-[34px] sm:h-[54.69995px] xl:h-auto flex flex-col justify-end items-center rounded-[6px] gap-[2px] xl:gap-[4px] shrink-0 self-stretch ${bottomGradient}`}>
+        <div className={`pb-[20px] lg:pb-[34px] sm:h-[54.69995px] lg:h-auto flex flex-col justify-end items-center rounded-[6px] gap-[2px] lg:gap-[4px] shrink-0 self-stretch ${bottomGradient}`}>
           <span className="text-[#FFF] text-[14px] font-bold leading-[18px] tracking-[0.1px] z-10">
             {badgeName}
           </span>
