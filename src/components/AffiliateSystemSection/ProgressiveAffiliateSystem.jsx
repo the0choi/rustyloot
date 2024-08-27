@@ -61,7 +61,7 @@ const ProgressiveAffiliateSystem = () => {
           <span className="text-[#FFF] text-center text-[18px] lg:text-[21px] xl:text-[24px] font-bold leading-[23px] lg:leading-[27px] xl:leading-[31px] tracking-[0.1px] self-stretch">
             Progressive Affiliate System
           </span>
-          <span className="mx-auto w-[344px] sm:w-[420px] lg:w-[500px] text-[#6A6FA3] text-center text-[11px] lg:text-[12px] xl:text-[13px] font-bold leading-[14px] lg:leading-[16px] xl:leading-[17px] tracking-[0.1px] self-stretch">
+          <span className="mx-auto max-w-[344px] sm:w-[420px] lg:w-[500px] text-[#6A6FA3] text-center text-[11px] lg:text-[12px] xl:text-[13px] font-bold leading-[14px] lg:leading-[16px] xl:leading-[17px] tracking-[0.1px] self-stretch">
             The more users you refer the greater the rewards. Ascend through the ranks
             to get up to 5% of every deposit and unlock exclusive features and rewards.
           </span>

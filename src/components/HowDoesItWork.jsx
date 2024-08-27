@@ -7,7 +7,7 @@ const HowDoesItWork = () => {
   return (
     <div className="relative w-full lg:h-[450px] xl:h-[580px] self-stretch flex flex-wrap items-center justify-center gap-[20px] sm:gap-[32px] xl:gap-0 px-[16px] sm:px-[40px] py-[32px] sm:py-[64px] lg:py-[80px] xl:py-[100px] bg-[linear-gradient(107deg,_#17182F_0%,_#151628_67.29%)]">
       <img src={bannerHowDoesItWork} className="absolute inset-0 w-full h-full block object-cover opacity-70" />
-      <div className="w-[344px] sm:w-[256px] lg:w-[350px] xl:w-[485px] flex flex-col items-start gap-[12px] xl:gap-[16px] z-10">
+      <div className="max-w-[344px] sm:w-[256px] lg:w-[350px] xl:w-[485px] flex flex-col items-start gap-[12px] xl:gap-[16px] z-10">
         <span className="self-stretch text-[#FFF] text-left font-bold text-[16px] sm:text-[18px] lg:text-[20px] xl:text-[24px] leading-[20px] sm:leading-[23px] lg:leading-[26px] xl:leading-[31px] tracking-[0.1px]">How does it work?</span>
         <div className="flex flex-col gap-[12px] sm:gap-[16px]">
           <div className="flex items-center gap-[16px] self-stretch">
@@ -18,7 +18,7 @@ const HowDoesItWork = () => {
                 </svg>
               </div>
             </div>
-            <span className="min-w-[300px] sm:min-w-[0px] max-w-[300px] sm:max-w-[212px] lg:max-w-[290px] xl:max-w-[300px] self-stretch text-left text-[#6A6FA3] font-bold text-[11px] lg:text-[12px] xl:text-[13px] leading-[14px] lg:leading-[16px] xl:leading-[17px] tracking-[0.1px]">
+            <span className="w-auto sm:min-w-[0px] max-w-[300px] sm:max-w-[212px] lg:max-w-[290px] xl:max-w-[300px] self-stretch text-left text-[#6A6FA3] font-bold text-[11px] lg:text-[12px] xl:text-[13px] leading-[14px] lg:leading-[16px] xl:leading-[17px] tracking-[0.1px]">
               Make sure your friends apply your code when depositing or when claiming their free coins
             </span>
           </div>
@@ -31,7 +31,7 @@ const HowDoesItWork = () => {
                 </svg>
               </div>
             </div>
-            <span className="min-w-[300px] sm:min-w-[0px] max-w-[300px] sm:max-w-[212px] lg:max-w-[290px] xl:max-w-[300px] self-stretch text-left text-[#6A6FA3] font-bold text-[11px] lg:text-[12px] xl:text-[13px] leading-[14px] lg:leading-[16px] xl:leading-[17px] tracking-[0.1px]">
+            <span className="w-auto sm:min-w-[0px] max-w-[300px] sm:max-w-[212px] lg:max-w-[290px] xl:max-w-[300px] self-stretch text-left text-[#6A6FA3] font-bold text-[11px] lg:text-[12px] xl:text-[13px] leading-[14px] lg:leading-[16px] xl:leading-[17px] tracking-[0.1px]">
               Each player using your code will activate their rakeback and the option to claim two rewards
             </span>
           </div>
@@ -48,7 +48,7 @@ const HowDoesItWork = () => {
                 </svg>
               </div>
             </div>
-            <span className="min-w-[300px] sm:min-w-[0px] max-w-[300px] sm:max-w-[212px] lg:max-w-[290px] xl:max-w-[300px] self-stretch text-left text-[#6A6FA3] font-bold text-[11px] lg:text-[12px] xl:text-[13px] leading-[14px] lg:leading-[16px] xl:leading-[17px] tracking-[0.1px]">
+            <span className="sm:min-w-[0px] max-w-[300px] sm:max-w-[212px] lg:max-w-[290px] xl:max-w-[300px] self-stretch text-left text-[#6A6FA3] font-bold text-[11px] lg:text-[12px] xl:text-[13px] leading-[14px] lg:leading-[16px] xl:leading-[17px] tracking-[0.1px]">
               You earn a commission on each deposit players make while using your code
             </span>
           </div>
